@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+p {
+  color: #7e7878;
+  font-size: 16px;
+}
+/* customised btns============================ */
+.btn {
+  background: rgb(114, 238, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 238, 131, 0.9780287114845938) 34%,
+    rgba(130, 234, 255, 1) 100%
+  );
+  border-radius: 35px;
+  padding: 14px 49px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 15px/1 'Open Sans', sans-serif;
+  text-align: center;
+}
+/* customised btns end============================= */
+
+/* the green hover lines in the navbar============== */
+.nav-item a:hover {
+  border-bottom: 3px solid #03b470;
+}
+/*Introduction=======================================*/
+/* introduction section */
+
+#introduction {
+  padding: 10em 5em;
+  background-image: url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  min-height: 70vh !important;
+    background-size: 100% 100%;
+    background-position: 0% -8vh;
+    width: 100%;
+}
+
+.bg-intro {
+  width: 58%;
+  position: absolute;
+  right: -100px;
+  top: 5em;
+}
+.thephones{
+    top: -29% !important;
+    position:relative;
+    right: 5em;
+}
+#mockups-img {
+    width: 95% !important;
+  }
+
+
+
+
+/* ==============media queries for hiding background image====== */
+@media(max-width:575px){
+    #introduction{
+        background-image:block !important; 
+    }
+    .bg-intro{
+        display:none;
+    }
+}
+@media(min-width:575px){
+    #introduction{
+        background-image:none !important; 
+    }
+}
+.mockups-img {
+  position: absolute;
+  top: -15em;
+  right: -230px;
+  width: 100%;
+}
+.intro-para {
+  margin: 6% 0;
+}
+
+.display-4 {
+  font-weight: 400;
+}
+
+/* ==============media queries for placing all body text centre on small screen========= */
+@media (min-width:416px) and (max-width: 575px) {
+    body{
+        text-align: center;
+    }}
+@media (min-width:416px) and (max-width: 575px) {
+        body p{
+            text-align: center;
+        }}
+
+/*==================why choose use Section==========----==  */    
+#whychoose {
+  background: rgb(224, 224, 224);
+  padding: 10% 10%;
+}
+#whychoose .ypara{
+  margin:2em 0;
+  width: 35em;
+}
+h5 {
+  margin: 8% 0;
+}
+
+/* =====================article section===================== */
+#article {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.article-heading {
+  padding: 3% 10%;
+}
+/* placing the cards in the center of the section */
+.card-deck {
+  padding: 2% 10%;
+}
+/* removing the borders from each cards */
+.card{
+    border: none;
+}
+/*reducing the image height in the cards*/
+.card-img-top{
+    height: 40%;
+}
+/* ==================card-deck media queries==================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 1 1 48.7%;
+      flex: 1 1 48.7%;
+    }
+    /* hiding the desktop backgrnd from #introductn on all screen size */
+    .bg-intro{
+        display:none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 10 10 32%;
+      flex: 10 10 32%;
+    }
+    .bg-intro{
+        display:none;
+    }
+  }
+ 
+  @media (min-width: 992px) and (max-width: 1200px)
+  {
+    .card-deck .card {
+      -ms-flex: 2 15 24%;
+      flex: 2 15 24%;
+    }
+  }
+  
+/* ========================footer========================== */
+/* .logo-buttom{
+    width: 9em;
+    padding: 5em 10em;
+} */
+#footer{
+    background-color: hsl(233, 26%, 24%);
+    padding: 2% 8%;
+}
+.footer-end {
+    text-align: center;
+}
+
+.footer-link {
+    padding: 10px 0;
+}
+
+.logo-buttom {
+    width: 7.2em;
+    padding: 10px 0;
+    margin-bottom: 2em;
+}
+.s-icon:hover,.s-icon:active{
+    color: lightgreen;
+}
+.footer-list{
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+}
+.footer-list:hover {
+    text-decoration: none;
+    color: #2bb7da;
+    }
